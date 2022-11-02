@@ -47,47 +47,80 @@
 
             &:hover {
                 color: #ffd700;
+
+                svg {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
             }
 
-            // svg {
-            //     opacity: 0;
-            // }
+            &:after {
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transform: all 0.3s ease-out;
+            }
 
-            // &:after {
-            //     opacity: 1;
-            // }
+            &:first-child {
+                &::after {
+                    content: 'HOME';
+                }
+            }
+            
         }
 
-        // &:after {
-        //     content: '';
-        //     font-size: 9px;
-        //     letter-spacing: 2px;
-        //     position: absolute;
-        //     bottom: 0;
-        //     display: block;
-        //     width: 100%;
-        //     text-align: center;
-        //     opacity: 0;
-        //     transform: all 0.3s ease-out;
-        // }
+    
+        a.about-link {
+            &::after {
+                content: 'ABOUT';
+            }
+        }
 
-        // &:first-child {
-        //     &::after {
-        //         content: 'HOME';
-        //     }
-        // }
+        a.contact-link {
+            &::after {
+                content: 'CONTACT';
+            }
+        }
 
-        // a.about-link {
-        //     &::after {
-        //         content: 'ABOUT';
-        //     }
-        // }
+        a.active {
+            svg {
+                color: #ffd700;
+            }
+        }
 
-        // a.contact-link {
-        //     &::after {
-        //         content: 'CONTACT';
-        //     }
-        // }
+    }
 
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 15px;
+                line-height: 16px;
+                color: #4d4d4e;
+
+                &:hover svg {
+                    color: #ffd700;
+                }
+            }
+        }
     }
 }
