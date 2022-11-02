@@ -28,17 +28,17 @@ const Sidebar = () => {
             <ul>
                 <li>
                     <a target="_blank" rel="noreferrer"href="https://www.linkedin.com/in/elvisgithinji/" >
-                        <FontAwesomeIcon icon={faLinkedin} color="4d4d4e" /> 
+                        <FontAwesomeIcon icon={faLinkedin} /> 
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noreferrer"href="https://github.com/karvel-code" >
-                        <FontAwesomeIcon icon={faGithub} color="4d4d4e" /> 
+                        <FontAwesomeIcon icon={faGithub} /> 
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noreferrer"href="https://www.linkedin.com/in/elvisgithinji/" >
-                        <FontAwesomeIcon icon={faYoutube} color="4d4d4e" /> 
+                        <FontAwesomeIcon icon={faYoutube} /> 
                     </a>
                 </li>
             </ul>
